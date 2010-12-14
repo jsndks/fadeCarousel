@@ -1,0 +1,57 @@
+/* ---------------------------------------------------------------------
+1: Imports / Font Embed
+------------------------------------------------------------------------ */
+@import url("reset.css");
+
+/* ---------------------------------------------------------------------
+-: Temp Styles
+------------------------------------------------------------------------ */
+
+#wrapper {
+	width: 600px;
+	padding: 20px;
+	border: 1px solid #999;
+	background: #ccc;
+	margin: 30px auto 0;
+}
+
+/* ---------------------------------------------------------------------
+2: Carousel Plugin
+------------------------------------------------------------------------ */
+
+.carousel {
+	width: 500px;
+	height: 300px;
+	position: relative;
+}
+
+.carousel .window {
+	position: relative;
+	overflow: hidden;
+}
+
+.carousel .window img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.carousel .paginator {
+	position: absolute;
+	z-index: 10;
+	right: -85px;
+	margin-top: 10px;
+}
+
+.carousel .paginator li {
+	margin-bottom: 10px;
+}
+
+.carousel .paginator li a {
+	display: block;
+}
+
+.carousel .paginator li a.active {
+	border: 1px solid blue;
+}
